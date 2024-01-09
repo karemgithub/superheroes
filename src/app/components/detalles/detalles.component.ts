@@ -13,11 +13,13 @@ import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angu
 import { SuperheroesComponent } from '../superheroes/superheroes.component';
 import { routes } from '../../app.routes';
 import { ModificarshComponent } from '../modificarsh/modificarsh.component';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-detalles',
   standalone: true,
-  imports: [CommonModule, MatDividerModule, MatButtonModule, MatListModule, ReactiveFormsModule, SuperheroesComponent, ModificarshComponent],
+  imports: [CommonModule, MatDividerModule, MatButtonModule, MatListModule, ReactiveFormsModule, SuperheroesComponent, 
+    ModificarshComponent, NgxUiLoaderModule],
   templateUrl: './detalles.component.html',
   styleUrl: './detalles.component.css'
 })
